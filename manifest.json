@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "PageCrawler",
+  "description": "Crawl pages for broken CSS, Javascript and anchor links.",
+  "version": "0.1",
+  "permissions": [
+    "tabs",
+    "*://*/*"
+  ],
+  "browser_action": {
+    "default_title": "PageCrawler",
+    "default_popup": "views/popup.html"
+  },
+  "web_accessible_resources": [
+    "*://*/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["vendor/jquery.min.js", "js/PageCrawler.js"]
+    }
+  ]
+}

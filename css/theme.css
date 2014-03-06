@@ -1,0 +1,92 @@
+.popup-wrap {
+  width: 350px;
+}
+
+.popup-wrap .row {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.popup-wrap .row:first-child {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.popup-wrap .row .col-md-12 > * {
+  margin-right: 1em;
+}
+
+.popup-wrap .row .col-md-12 > *:last-child {
+  margin-right: 0px;
+}
+
+.cell {
+
+}
+
+.full.cell {
+  width: 100%;
+  padding-top: 0.5em;
+}
+
+.half.cell {
+  width: 50%;
+  float:left;
+}
+.tab-header {
+  width: 100%;
+  display: block;
+}
+
+.tab-thumb {
+  width: auto;
+  height: 100%;
+  float: left;
+  padding: 5%;
+  text-align: center;
+  
+  font-size: 0.9em;
+  font-weight: bold;
+  text-transform: uppercase;
+  
+  border-bottom: 2px solid #ccc;
+  transition: all 0.5s ease;
+}
+
+.tab-thumb:hover,
+.tab-thumb.active {
+  background-color: #efefef;
+  border-bottom: 2px solid blue;
+}
+
+.tab table tr td {
+  padding: 0.5em 1em 0.5em 0px;
+  text-align: center;
+}
+
+.tab table tr td:first-child {
+  text-align: left;
+}
+
+.badge {
+  background-color: #ccc;
+  color: #fff;
+  border-radius: 4px;
+  padding: 0.25em 0.5em;
+}
+
+.badge.success {
+  background-color: green;
+}
+
+.badge.failure {
+  background-color: red;
+}
+
+.btn {
+  padding: 0.5em 1em;
+}
+
+.hide {
+  display: none;
+}

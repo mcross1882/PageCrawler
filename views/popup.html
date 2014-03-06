@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PageCrawler :: Popup Menu</title>
+    
+    <link rel="stylesheet" type="text/css" href="../css/theme.css" />
+    
+    <script type="text/javascript" src="../vendor/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/PopupController.js"></script>
+  </head>
+  
+  <body>
+    <div class="popup-wrap">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h3>PageCrawler</h3>
+            <small>Crawl pages for broken links, images, javascript and css.</small>
+          </div>
+        </div>
+        
+        <div class="tab-header">
+          <div class="tab-thumb active" data-id="overview">Overview</div>
+          <div class="tab-thumb" data-id="successes">Successes</div>
+          <div class="tab-thumb" data-id="failures">Failures</div>
+        </div>
+        
+        <div class="tab-content">
+          <div class="tab" data-id="overview">
+            <table>
+              <thead>
+                <tr>
+                  <td>Category</td>
+                  <td>Successes</td>
+                  <td>Failures</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="css-results">
+                  <td>CSS</td>
+                  <td><span class="badge failure">0</span></td>
+                  <td><span class="badge success">0</span></td>
+                </tr>
+                <tr class="javascript-results">
+                  <td>Javascript</td>
+                  <td><span class="badge failure">0</span></td>
+                  <td><span class="badge success">0</span></td>
+                </tr>
+                <tr class="links-results">
+                  <td>Anchor Links</td>
+                  <td><span class="badge failure">0</span></td>
+                  <td><span class="badge success">0</span></td>
+                </tr>
+                <tr class="images-results">
+                  <td>Images</td>
+                  <td><span class="badge failure">0</span></td>
+                  <td><span class="badge success">0</span></td>
+                </tr>
+              </tbody>
+            </table>
+              </tbody>
+            </table>
+          </div>
+          <div class="tab successes hide" data-id="successes">
+            <h4>CSS</h4>
+            <ul class="css-results-list"></ul>
+            
+            <h4>Javascripts</h4>
+            <ul class="javascript-results-list"></ul>
+            
+            <h4>Anchor Links</h4>
+            <ul class="links-results-list"></ul>
+            
+            <h4>Images</h4>
+            <ul class="images-results-list"></ul>
+          </div>
+          
+          <div class="tab failures hide" data-id="failures">
+            <h4>CSS</h4>
+            <ul class="css-results-list"></ul>
+            
+            <h4>Javascripts</h4>
+            <ul class="javascript-results-list"></ul>
+            
+            <h4>Anchor Links</h4>
+            <ul class="links-results-list"></ul>
+            
+            <h4>Images</h4>
+            <ul class="images-results-list"></ul>
+          </div>
+        </div>
+            
+          <div class="row buttons">
+            <div class="col-md-12">
+              <div class="btn-group">
+                <button type="button" class="btn btn-success analyze">Analyze</button>
+              </div>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>
